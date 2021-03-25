@@ -1,0 +1,48 @@
+{
+    "PRODUCTOS": [
+        {
+            "id": 1,
+            "nombre": "ASNDK",
+            "categoria": "Botas",
+            "descripcion": "descripcion",
+            "imagen": "https://picsum.photos/215/150",
+            "precio": 7000,
+            "color": "blanco",
+            "material": "Cuero",
+            "stock": 5
+        },
+        {
+            "id": 2,
+            "nombre": "DGDFG",
+            "categoria": "Botas",
+            "descripcion": "descripcion",
+            "imagen": "https://picsum.photos/215/150",
+            "precio": 6000,
+            "color": "blanco",
+            "material": "Cuero",
+            "stock": 5
+        },
+        {
+            "id": 3,
+            "nombre": "ERT",
+            "categoria": "Accesorios",
+            "descripcion": "descripcion",
+            "imagen": "https://picsum.photos/215/150",
+            "precio": 700,
+            "color": "blanco",
+            "material": "Cuero",
+            "stock": 5
+        },
+        {
+            "id": 4,
+            "nombre": "UJYUKJTFGFGH",
+            "categoria": "Trucks",
+            "descripcion": "descripcion",
+            "imagen": "https://picsum.photos/215/150",
+            "precio": 3000,
+            "color": "Azul",
+            "material": "Aluminio",
+            "stock": 5
+        }
+    ]
+}

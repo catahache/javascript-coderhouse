@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- BOOTSTRAP -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="../css/style.css" />
+
+        <title>Tienda Bonanno</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container-fluid">
+                    <a
+                        class="navbar-brand d-none d-sm-block brand-title"
+                        href="../index.html"
+                        >BONANNO</a
+                    >
+                    <button
+                        id="buttonHamburguer"
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a
+                        class="navbar-brand d-block d-sm-none me-0 brand-title"
+                        href="../index.html"
+                        >BONANNO</a
+                    >
+                    <a
+                        type="button"
+                        class="btn btn-primary d-block d-sm-none btn-carrito"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#carritoCompras"
+                    >
+                        1
+                    </a>
+
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    id="buttonShop"
+                                    class="nav-link"
+                                    data-bs-toggle="collapse"
+                                    href="#collapseShop"
+                                    role="button"
+                                    aria-expanded="false"
+                                    aria-controls="collapseShop"
+                                    >Shop</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a
+                        type="button"
+                        class="btn btn-primary d-none d-sm-block btn-carrito"
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#carritoCompras"
+                    >
+                        2
+                    </a>
+                </div>
+            </nav>
+            <!-- collapse -->
+            <ul class="collapse" id="collapseShop">
+                <li>
+                    <a href="" class="link-categoria">Todos los productos</a>
+                </li>
+                <li>
+                    <a href="#" class="link-categoria" id="Completos"
+                        >Completos</a
+                    >
+                </li>
+                <li>
+                    <a href="#" class="link-categoria" id="Botas">Botas</a>
+                </li>
+                <li>
+                    <a href="#" class="link-categoria" id="Trucks">Trucks</a>
+                </li>
+                <li>
+                    <a href="#" class="link-categoria" id="Ruedas">Ruedas</a>
+                </li>
+                <li>
+                    <a href="#" class="link-categoria" id="Accesorios"
+                        >Accesorios</a
+                    >
+                </li>
+            </ul>
+        </header>
+
+        <section class="productos">
+            <h2 class="text-center m-4">Tienda Bonanno</h2>
+            <div class="productos__container container">
+                <div
+                    class="row d-flex justify-content-center row-cols-md-3 g-0"
+                    id="productosRow"
+                >
+                    <!-- Modelo -->
+                    <!-- <div class="card-producto">
+                        <h2>Adidas Shoes</h2>
+                        <p>The best shoes in marketplace</p>
+                        <div class="pic-producto"></div>
+                        <div class="colors-producto">
+                            <span
+                                class="blue active"
+                                data-color="#74b9ff"
+                                data-pic="url(image/.1.png)"
+                            ></span>
+                            <span
+                                class="pink"
+                                data-color="#fab1a0"
+                                data-pic="url(image/2.png)"
+                            ></span>
+                            <span
+                                class="green"
+                                data-color="#55efc4"
+                                data-pic="url(image/3.png)"
+                            ></span>
+                            <span
+                                class="purple"
+                                data-color="#686de0"
+                                data-pic="url(image/4.png)"
+                            ></span>
+                        </div>
+                        <div class="info-producto">
+                            <div class="price-producto">30$</div>
+                            <a href="#" class="button-producto">Add to Cart</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="carritoCompras"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            CARRITO
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="modal-lista" id="modalLista"></ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            Continuar al pago
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container">
+            <div class="row">
+                <div class="col-3 text-center">
+                    <a href="#">FAQ</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <!-- display none en mobile: -->
+                <div class="col-6">
+                    <form
+                        action=""
+                        class="suscripcion form-control text-center border border-secondary mb-2"
+                    >
+                        <input type="text" />
+                        <button class="btn btn-info">Suscribite!</button>
+                    </form>
+                </div>
+                <div class="col-9 text-center col-md-3">
+                    <h5>Seguinos!</h5>
+                    <a href=""><img src="https://place-hold.it/40" alt="" /></a>
+                    <a href=""><img src="https://place-hold.it/40" alt="" /></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- BOOTSTRAP -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="../js/jsonproductos.js"></script>
+        <script defer src="../js/classCarrito.js"></script>
+        <script defer src="../js/logica.js"></script>
+        <script defer src="../js/logicaCard.js"></script>
+    </body>
+</html>
