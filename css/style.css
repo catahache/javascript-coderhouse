@@ -83,16 +83,72 @@ body {
 /****************************************************************/
 
 .splash {
-    background-image: url("/images/splash.jpg");
+    background-image: url("/images/splash.jpeg");
     width: 100%;
     height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    /* padding: 15px; */
+    z-index: 1;
+}
+
+.darker {
+    background-color: rgba(0, 0, 0, 0.301);
+    width: 100%;
+    height: 100%;
+    padding: 15px;
 }
 
 .splash__contenedor {
-    width: 30vw;
+    width: 51vw;
+    z-index: 2;
+    color: white;
+}
+
+.splash__button {
+    width: 100px;
+    /* color: white !important;
+    background-color: black !important;
+    border-color: black !important; */
+}
+
+.info-button {
+    color: white !important;
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.info-button:hover {
+    background-color: #f8b932 !important;
+    border-color: #f8b932 !important;
+}
+
+.splash__button:hover {
+    /* background-color: #f8b932 !important;
+    border-color: #f8b932 !important; */
+}
+
+.splash__button:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 575px) {
+    .splash__contenedor {
+        text-align: center;
+        width: 90vw;
+    }
+}
+
+/* Premisas */
+
+.premisas_img {
+    width: 100px;
+}
+
+/* Seguinos */
+.seguinos__img {
+    width: 240px;
 }
 
 .servicios {
@@ -282,8 +338,24 @@ body {
 }
 
 /* Footer */
-@media (max-width: 510px) {
+@media (max-width: 767px) {
     footer .col-6 {
         display: none;
     }
+}
+
+.icon-redes {
+    width: 40px;
+}
+
+/* prueba */
+.navbar-right {
+    float: right;
+}
+.li-badge {
+    display: inline;
+    padding-left: 20px;
+}
+.badge {
+    color: black;
 }
